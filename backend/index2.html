@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MY APP</title>
+</head>
+<body>
+   
+  <br /> 
+  <br /> 
+
+ <!--  SINGLE FILE -->
+<form action="/upload" enctype="multipart/form-data" method="POST"> 
+  <input type="text" value="Enter a comment for your pic" name="comment">
+  <br />
+  <br />
+  Select one image to upload:  <input type="file" name="image" />
+  <input type="submit" value="Upload a file"/>
+</form>
+
+<br /> 
+<br /> 
+<br /> 
+
+
+<!-- MULTIPLE FILES -->
+ 
+<form action="/uploads"  enctype="multipart/form-data" method="POST">
+  Select up to 3 images to upload:  <input type="file" name="images" multiple>
+  <input type="submit" value="Upload your files"/>
+</form>
+ 
+ 
+</body>
+</html>
